@@ -255,7 +255,7 @@ come in as well.
     [stylegroup='path'],
     [stylegroup='track'],
     [stylegroup='cycleway']    { line-width: 0; }
-    [stylegroup='railway']  { line-width: 0.0; }
+    [stylegroup='railway']  { line-width: 0; }
   }
 }
 
@@ -292,11 +292,11 @@ come in as well.
   }
   [stylegroup='railway'] {
     line-opacity: 1;
+    line-color: darken(@rail_fill,18);
     [type='subway'] { line-opacity: 0; line-width: 0; }
     [type='tram'] { line-opacity: 0; line-width: 0; }
     [tunnel=1] { line-opacity: 0; line-width: 0; }
     [usage!='main'] { line-opacity: 0; line-width: 0; }
-    line-color: darken(@rail_fill,18);
     [zoom>=13] { line-color: darken(@rail_fill,9); }
     [zoom>=15] { line-color: @rail_fill; }
   }
@@ -472,7 +472,7 @@ come in as well.
   [zoom=17] {
     [stylegroup='railway'] {
       line-opacity: 0;
-      line-width: 2.0;
+      line-width: 1.0;
       [type='rail'] {
         [service='none'] {
           line-width: 1.35;
