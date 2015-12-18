@@ -20,10 +20,10 @@ Map {
 
 /* land use colors                                                    */
 @land:              #FFFFFF;
-@urban:             #DDDDDD;
-@water:             #f4f4f4;
-@grass:             #efefef;
-@wood:              #e2e2e2;
+@urban:             #cfcfcf;
+@water:             #f0f0f0;
+@grass:             #ececec;
+@wood:              #e0e0e0;
 
 @beach:             @land;
 @agriculture:       @land;
