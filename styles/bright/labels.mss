@@ -23,6 +23,7 @@
   [SCALERANK<=3][zoom=7],
   [SCALERANK<=3][zoom=8] {
     text-name: '[NAME]';
+    text-avoid-edges: true;
     text-face-name: @sans_bold;
     text-size: @city_text_size+2;
     text-placement: point;
@@ -57,6 +58,7 @@
   [SCALERANK>3][SCALERANK<=7][zoom=7],
   [SCALERANK>3][SCALERANK<=9][zoom=8] {
     text-name: '[NAME]';
+    text-avoid-edges: true;
     text-face-name: @sans_bold;
     text-size: @city_text_size;
     text-placement: point;
@@ -82,6 +84,7 @@
 
 #place::city_label[type='city'][zoom>=9][zoom<=15] {
   text-name: '[name]';
+  text-avoid-edges: true;
   text-face-name: @sans_bold;
   text-placement: point;
   text-fill :@city_text;
@@ -130,6 +133,7 @@
 #place::town[type='town'][zoom>=9][zoom<=17] {
   [zoom>=9][zoom<11]{
     text-name: '[name]';
+    text-avoid-edges: true;
     text-face-name: @sans_bold;
     text-placement: point;
     text-halo-fill: @town_halo;
@@ -155,6 +159,7 @@
     
   [zoom>=11]{
     text-name: '[name]';
+    text-avoid-edges: true;
     text-face-name: @sans_bold;
     text-placement: point;
     text-fill: @town_text;
@@ -181,6 +186,7 @@
 #place::village[type='village'][zoom>=10][zoom<=17] {
   [zoom>=10][zoom<14]{
     text-name: '[name]';
+    text-avoid-edges: true;
     text-face-name: @sans;
     text-placement: point;
     text-halo-fill: @town_halo;
@@ -208,6 +214,7 @@
 
   [zoom>=14]{
     text-name: '[name]';
+    text-avoid-edges: true;
     text-face-name: @sans;
     text-placement: point;
     text-fill: @town_text;
@@ -228,6 +235,7 @@
 #place::hamlet[type='farm'] [zoom>=14],
 #place::hamlet[type='allotments'] [zoom>=14] {
   text-name:'[name]';
+  text-avoid-edges: true;
   text-face-name:@sans;
   text-placement:point;
   text-fill:@town_text;
@@ -243,6 +251,7 @@
 #place::suburb[type='suburb']
 [zoom>=14] {
   text-name:'[name]';
+  text-avoid-edges: true;
   text-face-name:@sans;
   text-placement:point;
   text-fill:@town_text;
@@ -258,6 +267,7 @@
 #place::locality[type='locality']
 [zoom>=15] {
   text-name: '[name]';
+  text-avoid-edges: true;
   text-face-name: @sans_light_italic;
   text-placement: point;
   text-fill: lighten(@town_text,27%);
@@ -280,6 +290,7 @@
 #waterway_label[type='river'][zoom>=13],
 #waterway_label[type='canal'][zoom>=15],
 #waterway_label[type='stream'][zoom>=17] {
+  text-avoid-edges: true;
   text-name: '[name]';
   text-face-name: @sans_semi_bold_italic;
   text-fill: darken(@water,30%);
@@ -313,6 +324,7 @@
 #road_label_ref {
   [type='motorway'] {
     [zoom>=9] {
+      text-avoid-edges: true;
       text-name:"[ref]";
       text-face-name:@sans_bold;
       text-size:10;
@@ -327,6 +339,7 @@
   }
   [type='trunk'] {
     [zoom>10] {
+      text-avoid-edges: true;
       text-name:'[ref]';
       text-face-name:@sans_bold;
       text-size:9;
@@ -342,6 +355,7 @@
   [type='primary'][zoom>11],
   [type='secondary'][zoom>11],
   [type='tertiary'][zoom>13] {
+    text-avoid-edges: true;
     text-name:'[ref]';
     text-face-name:@sans;
     text-size:9;
@@ -354,6 +368,7 @@
     text-min-distance:100;
   }
   [class='minorroads'][zoom>13] {
+    text-avoid-edges: true;
     text-name:'[ref]';
     text-face-name:@sans;
     text-size:8;
@@ -372,6 +387,7 @@
   [type='secondary'][zoom>13],
   [type='tertiary'][zoom>15],
   [type='residential'][zoom>16] {
+    text-avoid-edges: true;
     text-name:'[name]';
     text-face-name:@sans;
     text-size:10;
@@ -383,6 +399,7 @@
   }
   [class='minorroads'][zoom>13] {
     [type!='cycleway'][type!='path'] {
+      text-avoid-edges: true;
       text-name:'[name]';
       text-face-name:@sans;
       text-size:9;
@@ -395,6 +412,7 @@
   }
   [class='minorroads'][zoom>14] {
     [type!='cycleway'] {
+      text-avoid-edges: true;
       text-name:'[name]';
       text-face-name:@sans;
       text-size:9;
@@ -414,6 +432,7 @@
 
 #area_label[type='water'][zoom>=13],
 #area_label[type='wetland'][zoom>=13] {
+  text-avoid-edges: true;
   text-name: '[name]';
   text-face-name: @sans_semi_bold_italic;
   text-fill: darken(@water,30%);
@@ -438,6 +457,7 @@
 #area_label[type='forest'][zoom>=13][area>900],
 #area_label[type='forest'][zoom>=15] {
   text-name: "[name]";
+  text-avoid-edges: true;
   text-face-name: @sans_semi_bold_italic;
   text-fill: desaturate(darken(@wood,35%), 30%);
   text-halo-fill: fadeout(lighten(@wood,40%), 20%);
@@ -474,6 +494,7 @@
 #area_label[type='footway'][zoom>=16],
 #area_label[type='stadium'][zoom>=14] {
   text-name: '[name]';
+  text-avoid-edges: true;
   text-face-name: @sans_semi_bold_italic;
   text-fill: darken(@urban,45%);
   text-halo-fill: fadeout(lighten(@urban,20%),30%);

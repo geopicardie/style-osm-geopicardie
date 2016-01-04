@@ -6,7 +6,6 @@
 Map {
   font-directory: url(./fonts);
   background-color: @water;
-  buffer-size: 512;
 }
 
 /* Fonts                                                              */

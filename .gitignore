@@ -18,3 +18,4 @@ styles/faded/layers/*
 !styles/faded/layers/insert natural earth shapefiles here.txt
 styles/faded/fonts/*
 !styles/faded/fonts/insert exo font here.txt
+*.loc.mml
