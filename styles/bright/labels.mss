@@ -35,7 +35,6 @@
     text-placement-type: simple;
     text-allow-overlap: false;
     text-min-padding: 0;
-    text-placements: 'NE,NW,N,E,SE,W,SW,S';
     text-dx: 5;
     text-dy: -5;
     point-file: url(img/icon/dot_white_thick.svg);
@@ -71,7 +70,6 @@
     text-allow-overlap: false;
     text-min-padding: 0;
     text-placement-type: simple;
-    text-placements: 'NE,NW,N,E,SE,W,SW,S';
     text-dx: 5;
     text-dy: -5;
     point-file: url(img/icon/dot_white_thick.svg);
@@ -143,7 +141,6 @@
     text-placement-type: simple;
     text-allow-overlap: false;
     text-min-padding: 0;
-    text-placements: 'NE,NW,N,E,SE,W,SW,S';
     text-dx: 7;
     text-dy: -7;
     
@@ -196,7 +193,6 @@
     text-placement-type: simple;
     text-allow-overlap: false;
     text-min-padding: 0;
-    text-placements: 'NE,NW,N,E,SE,W,SW,S';
     text-dx: 7;
     text-dy: -7;
     
@@ -278,7 +274,6 @@
   text-min-distance: 40;
   text-character-spacing: 2;
   text-line-spacing: 2;
-  text-placements: 'NE,NW,N,E,SE,W,SW,S';
   text-dx: 5;
   text-dy: -5;
 }
@@ -510,9 +505,9 @@
 /* ONE-WAY ARROWS
 /* ================================================================== */
 
-#oneway_roads[zoom>=17] {
+#oneway_roads[zoom>=16] {
   [type="residential"],[type="secondary"],[type="unclassified"] {
-    marker-line-width: 1;
+    marker-line-width: 10;
     marker-placement:line;
     marker-max-error: 0.5;
     marker-spacing: 200;
