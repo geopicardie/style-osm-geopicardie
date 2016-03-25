@@ -42,35 +42,79 @@
         }
     },
     "tables": {
-	"admin": {
-		"fields": [
-			{ "name": "osm_id", "type": "id"},
-			{ "name": "geometry" , "type": "geometry" },
-			{ "key","name", "name": "name", "type": "string" },
-			{ "name": "type", "type": "mapping_value" },
-			{ "key": "admin_level", "name": "admin_level", "type": "integer" }
-		],
-		"mapping": {
-			"boundary": [ "administrative" ]
-		},
-		"type": "polygon"
-	},
-    "admin_members": {
-        "columns": [
-            { "name": "osm_id", "type": "id" },
-            { "name": "member_id", "type": "id" },
-	    { "name": "role", "type": "member_role", "from_member": true },
-	    { "name": "type", "type": "member_type" },
-	    { "name": "admin_level", "key": "admin_level", "type": "string" },
-	    { "name": "name", "key": "name", "type": "string" },
-	    { "name": "geometry", "type": "geometry" }
-        ],
-	"mapping": {
-	    "boundary": [ "administrative" ]
-	},
-        "type": "relation_member"
-    },
-
+        "admin": {
+            "fields": [
+                {
+                    "name": "osm_id",
+                    "type": "id"
+                },
+                {
+                    "name": "geometry",
+                    "type": "geometry"
+                },
+                {
+                    "key": "name",
+                    "name": "name",
+                    "type": "string"
+                },
+                {
+                    "name": "type",
+                    "type": "mapping_value"
+                },
+                {
+                    "key": "admin_level",
+                    "name": "admin_level",
+                    "type": "integer"
+                }
+            ],
+            "mapping": {
+                "boundary": [
+                    "administrative"
+                ]
+            },
+            "type": "polygon"
+        },
+        "admin_members": {
+            "columns": [
+                {
+                    "name": "osm_id",
+                    "type": "id"
+                },
+                {
+                    "name": "member_id",
+                    "type": "id"
+                },
+                {
+                    "name": "role",
+                    "type": "member_role",
+                    "from_member": true
+                },
+                {
+                    "name": "type",
+                    "type": "member_type"
+                },
+                {
+                    "name": "admin_level",
+                    "key": "admin_level",
+                    "type": "string"
+                },
+                {
+                    "name": "name",
+                    "key": "name",
+                    "type": "string"
+                },
+                {
+                    "name": "geometry",
+                    "type": "geometry"
+                }
+            ],
+            "mapping": {
+                "boundary": [
+                    "administrative"
+                ]
+            },
+            "type": "relation_member"
+        },
         "aeroways": {
             "fields": [
                 {
