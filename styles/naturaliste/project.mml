@@ -19,6 +19,7 @@
     "../bright/palette.mss",
     "../bright/base.mss",
     "../bright/roads.mss",
+    "../bright/admin.mss",
     "../bright/labels.mss",
     "./eolienne.mss",
     "./grilles.mss"
