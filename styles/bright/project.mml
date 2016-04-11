@@ -601,7 +601,7 @@
         "id": "place",
         "key_field": "",
         "srs": null,
-        "table": "( SELECT geometry, type, name, z_order, population\n  FROM osm_places\n  ORDER BY z_order, population DESC NULLS LAST\n) AS data",
+        "table": "(SELECT geometry, type, name, z_order, population FROM osm_places WHERE geometry && !bbox! ORDER BY z_order, population DESC NULLS LAST) AS data",
         "type": "postgis",
         "user": "user",
         "password": "user",
