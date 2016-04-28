@@ -141,6 +141,6 @@ Map {
 /* ADMIN COLORS
 /* ================================================================== */
 @admin_lvl2:        #9babe8; // frontière
-@admin_lvl4:        #cfabe8; // région
+@admin_lvl4:        #dd5fd3; // région
 @admin_lvl6:        #b2a172; // département
 @admin_lvl8:        #d8a54c; // commune

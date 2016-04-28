@@ -4,11 +4,13 @@
  * - Water ways
  */
 
+
+
 /* ================================================================== */
 /* LANDUSE & LANDCOVER
 /* ================================================================== */
 #10m_land[zoom>=0][zoom<6],
-#shoreline_300[zoom>=6][zoom<10],
+#land_polygons_z8[zoom>=6][zoom<10],
 #processed_p[zoom>=10] {
   ::outline {
     polygon-fill: darken(@water,@waterarea_darken_border_factor);
@@ -21,7 +23,6 @@
     line-color: @land;
   }
 }
-
 
 #landuse_gen0[zoom>=6][zoom<=9],
 #landuse_gen1[zoom>9][zoom<=12],
