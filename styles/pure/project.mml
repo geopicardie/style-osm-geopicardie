@@ -1,0 +1,891 @@
+{
+  "bounds": [
+    1.374,
+    49.2158,
+    4.2908,
+    51.0707
+  ],
+  "center": [
+    2.7473,
+    50.2279,
+    8
+  ],
+  "format": "png",
+  "interactivity": false,
+  "minzoom": 0,
+  "maxzoom": 19,
+  "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+  "Stylesheet": [
+    "../bright/palette.mss",
+    "../bright/base.mss",
+    "../bright/roads.mss",
+    "../bright/admin.mss"
+  ],
+  "Layer": [
+    {
+      "Datasource": {
+        "file": "osmlandata.shp",
+        "id": "land_polygons_z8",
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over"
+      },
+      "class": "",
+      "geometry": "polygon",
+      "id": "land_polygons_z8",
+      "name": "land_polygons_z8",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over"
+    },
+    {
+      "Datasource": {
+        "file": "osmlandata.shp",
+        "id": "land_polygons",
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over"
+      },
+      "class": "",
+      "geometry": "polygon",
+      "id": "land_polygons",
+      "name": "land_polygons",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over"
+    },
+    {
+      "Datasource": {
+        "file": "./layers/10m-land/10m-land.shp",
+        "id": "10m_land",
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over"
+      },
+      "class": "",
+      "geometry": "polygon",
+      "id": "10m_land",
+      "name": "10m_land",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over"
+    },
+    {
+      "Datasource": {
+        "file": "./layers/coastline-good/coastline-good.shp",
+        "id": "coastline",
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over"
+      },
+      "class": "",
+      "geometry": "polygon",
+      "id": "processed_p",
+      "name": "processed_p",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over"
+    },
+    {
+      "Datasource": {
+        "file": "./layers/shoreline_300/shoreline_300.shp",
+        "id": "shoreline",
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over"
+      },
+      "class": "",
+      "geometry": "polygon",
+      "id": "shoreline_300",
+      "name": "shoreline_300",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over"
+    },
+    {
+      "Datasource": {
+        "file": "./layers/10m-rivers/10m-rivers.shp",
+        "id": "10m_rivers",
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over"
+      },
+      "class": "",
+      "geometry": "polygon",
+      "id": "10m_rivers",
+      "name": "10m_rivers",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over"
+    },
+    {
+      "Datasource": {
+        "file": "./layers/10m-lakes/10m-lakes.shp",
+        "id": "10m_lakes",
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over"
+      },
+      "class": "",
+      "geometry": "polygon",
+      "id": "10m_lakes",
+      "name": "10m_lakes",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over"
+    },
+    {
+      "Datasource": {
+        "dbname": "osm",
+        "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34",
+        "geometry_field": "geometry",
+        "id": "landuse_gen0",
+        "key_field": "",
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "table": "( SELECT geometry, type, area\n  FROM osm_landusages_gen0 where geometry && !bbox! \n  ORDER BY area DESC\n) AS data",
+        "type": "postgis",
+        "user": "user",
+        "password": "user",
+        "srid": "3857"
+      },
+      "class": "",
+      "geometry": "polygon",
+      "id": "osm_landuse_gen0",
+      "name": "landuse_gen0",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "srs-name": "3857"
+    },
+    {
+      "Datasource": {
+        "dbname": "osm",
+        "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34",
+        "geometry_field": "geometry",
+        "id": "landuse_gen1",
+        "key_field": "",
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "table": "( SELECT geometry, type, area\n  FROM osm_landusages_gen1 where geometry && !bbox! ORDER BY area DESC\n) AS data",
+        "type": "postgis",
+        "user": "user",
+        "password": "user",
+        "srid": "3857"
+      },
+      "class": "",
+      "geometry": "polygon",
+      "id": "osm_landuse_gen1",
+      "name": "landuse_gen1",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "srs-name": "3857"
+    },
+    {
+      "Datasource": {
+        "dbname": "osm",
+        "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34",
+        "geometry_field": "geometry",
+        "id": "landuse",
+        "key_field": "",
+        "srs": null,
+        "table": "( SELECT geometry, type, area FROM osm_landusages where geometry && !bbox! ORDER BY area DESC) AS data",
+        "type": "postgis",
+        "user": "user",
+        "password": "user",
+        "srid": "3857"
+      },
+      "class": "",
+      "geometry": "polygon",
+      "id": "osm_landuse",
+      "name": "landuse",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "srs-name": "3857"
+    },
+    {
+      "Datasource": {
+        "dbname": "osm",
+        "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34",
+        "geometry_field": "geometry",
+        "id": "waterway_low",
+        "key_field": "",
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "table": "( SELECT geometry, type FROM osm_waterways WHERE type IN ('river', 'canal') and geometry && !bbox!) AS data",
+        "type": "postgis",
+        "user": "user",
+        "password": "user",
+        "srid": "3857"
+      },
+      "class": "",
+      "geometry": "linestring",
+      "id": "osm_waterway_low",
+      "name": "waterway_low",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "srs-name": "3857"
+    },
+    {
+      "Datasource": {
+        "dbname": "osm",
+        "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34",
+        "geometry_field": "geometry",
+        "key_field": "",
+        "table": "( SELECT geometry, type FROM osm_waterways WHERE type IN ('river', 'canal', 'stream') and geometry && !bbox!) AS data",
+        "type": "postgis",
+        "user": "user",
+        "password": "user",
+        "id": "waterway_med",
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "srid": "3857"
+      },
+      "class": "",
+      "geometry": "linestring",
+      "id": "osm_waterway_med",
+      "name": "waterway_med",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "srs-name": "3857"
+    },
+    {
+      "Datasource": {
+        "dbname": "osm",
+        "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34",
+        "geometry_field": "geometry",
+        "key_field": "",
+        "table": "( SELECT geometry, type FROM osm_waterways WHERE type IN ('river', 'canal', 'stream', 'ditch', 'drain') and geometry && !bbox!) AS data",
+        "type": "postgis",
+        "user": "user",
+        "password": "user",
+        "id": "waterway_high",
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "srid": "3857"
+      },
+      "class": "",
+      "geometry": "linestring",
+      "id": "osm_waterway_high",
+      "name": "waterway_high",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "srs-name": "3857"
+    },
+    {
+      "Datasource": {
+        "dbname": "osm",
+        "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34",
+        "geometry_field": "geometry",
+        "id": "water_gen0",
+        "key_field": "",
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "table": "( SELECT geometry FROM osm_waterareas WHERE geometry && !bbox! and area > 10000) AS data",
+        "type": "postgis",
+        "user": "user",
+        "password": "user",
+        "srid": "3857"
+      },
+      "class": "",
+      "geometry": "polygon",
+      "id": "osm_water_gen0",
+      "name": "water_gen0",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "srs-name": "3857"
+    },
+    {
+      "Datasource": {
+        "dbname": "osm",
+        "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34",
+        "geometry_field": "geometry",
+        "id": "water_gen1",
+        "key_field": "",
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "table": "( SELECT geometry FROM osm_waterareas WHERE area > 1000 and geometry && !bbox!) AS data",
+        "type": "postgis",
+        "user": "user",
+        "password": "user",
+        "srid": "3857"
+      },
+      "class": "",
+      "geometry": "polygon",
+      "id": "osm_water_gen1",
+      "name": "water_gen1",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "srs-name": "3857"
+    },
+    {
+      "Datasource": {
+        "dbname": "osm",
+        "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34",
+        "geometry_field": "geometry",
+        "id": "water",
+        "key_field": "",
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "table": "( SELECT geometry FROM osm_waterareas where geometry && !bbox!) AS data",
+        "type": "postgis",
+        "user": "user",
+        "password": "user",
+        "srid": "3857"
+      },
+      "class": "",
+      "geometry": "polygon",
+      "id": "osm_water",
+      "name": "water",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "srs-name": "3857"
+    },
+    {
+      "Datasource": {
+        "file": "L93_5K.shp",
+        "id": "L93_5K",
+        "srs": "+proj=lcc +lat_1=49 +lat_2=44 +lat_0=46.5 +lon_0=3 +x_0=700000 +y_0=6600000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs"
+      },
+      "class": "",
+      "geometry": "polygon",
+      "id": "L93_5K",
+      "name": "L93_5K",
+      "srs": "+proj=lcc +lat_1=49 +lat_2=44 +lat_0=46.5 +lon_0=3 +x_0=700000 +y_0=6600000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs"
+    },
+    {
+      "Datasource": {
+        "file": "L93_10K.shp",
+        "id": "L93_5K",
+        "srs": "+proj=lcc +lat_1=49 +lat_2=44 +lat_0=46.5 +lon_0=3 +x_0=700000 +y_0=6600000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs"
+      },
+      "class": "",
+      "geometry": "polygon",
+      "id": "L93_10K",
+      "name": "L93_10K",
+      "srs": "+proj=lcc +lat_1=49 +lat_2=44 +lat_0=46.5 +lon_0=3 +x_0=700000 +y_0=6600000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs"
+    },
+    {
+      "Datasource": {
+        "dbname": "osm",
+        "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34",
+        "geometry_field": "geometry",
+        "key_field": "",
+        "table": "( SELECT geometry, type, name, area FROM osm_buildings WHERE type != 'roof' and geometry && !bbox! ORDER BY ST_YMin(ST_Envelope(geometry)) DESC\n) AS data",
+        "type": "postgis",
+        "user": "user",
+        "password": "user",
+        "srid": "3857"
+      },
+      "class": "",
+      "geometry": "polygon",
+      "id": "osm_buildings",
+      "name": "buildings",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "srs-name": "3857"
+    },
+    {
+      "Datasource": {
+        "dbname": "osm",
+        "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34",
+        "geometry_field": "geometry",
+        "id": "aeroway",
+        "key_field": "",
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "table": "( SELECT geometry, type FROM osm_aeroways WHERE geometry && !bbox!) AS data",
+        "type": "postgis",
+        "user": "user",
+        "password": "user",
+        "srid": "3857"
+      },
+      "class": "",
+      "geometry": "linestring",
+      "id": "osm_aeroway",
+      "name": "aeroway",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "srs-name": "3857"
+    },
+    {
+      "Datasource": {
+        "dbname": "osm",
+        "extent": "-20037508.34,-20037508.34,20037508.34,20037508.34",
+        "geometry_field": "geometry",
+        "key_field": "",
+        "table": "( SELECT geometry, type, 0 as bridge, access,\nCASE\n    WHEN usage IN ('main') THEN 'main'\n    WHEN usage IN ('branch') THEN 'branch'\n    WHEN usage IN ('industrial') THEN 'industrial'\n    WHEN usage IN ('military') THEN 'military'\n    WHEN usage IN ('tourism') THEN 'tourism'\n    WHEN usage IS NULL THEN 'none'\n    ELSE 'other' END AS usage,\n CASE\n    WHEN service IN ('spur') THEN 'spur'\n    WHEN service IN ('yard') THEN 'yard'\n    WHEN service IN ('siding') THEN 'siding'\n    WHEN service IS NULL THEN 'none'\n    ELSE 'other' END AS service,\nrender, z_order, tunnel,\n  CASE\n    WHEN type IN ('motorway', 'trunk') THEN 'motorway'\n    WHEN type IN ('primary', 'secondary') THEN 'mainroad'\n    WHEN type IN ('motorway_link', 'trunk_link', 'primary_link', 'secondary_link', 'tertiary', 'tertiary_link', 'residential', 'unclassified', 'road', 'living_street') THEN 'minorroad'\n    WHEN type IN ('service', 'pedestrian') THEN 'restricted'\n    WHEN type IN ('track') THEN 'track'\n    WHEN type IN ('cycleway') THEN 'cycleway'\n    WHEN type IN ('path', 'footway', 'steps', 'bridleway') THEN 'path'\n    WHEN type IN ('light_rail', 'subway', 'narrow_gauge', 'rail', 'tram') THEN 'railway'\n    ELSE 'other' END AS stylegroup\n  FROM (\n    SELECT *, '1_outline' AS render FROM osm_roads_n_railways WHERE geometry && !bbox! and tunnel = 1\n    UNION ALL\n    SELECT *, '2_line' AS render FROM osm_roads_n_railways WHERE geometry && !bbox! and tunnel = 1\n    UNION ALL\n    SELECT *, '3_inline' AS render FROM osm_roads_n_railways WHERE geometry && !bbox! and tunnel = 1\n  ) AS tunnels\n  ORDER BY z_order ASC, render ASC\n) AS data",
+        "type": "postgis",
+        "user": "user",
+        "password": "user",
+        "extent_cache": "auto",
+        "srid": "3857"
+      },
+      "class": "",
+      "geometry": "linestring",
+      "id": "osm_tunnel",
+      "name": "tunnel",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "srs-name": "3857",
+      "extent": [
+        -179.9999999749438,
+        -85.051,
+        179.9999999749438,
+        85.051
+      ],
+      "advanced": {}
+    },
+    {
+      "Datasource": {
+        "dbname": "osm",
+        "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34",
+        "geometry_field": "geometry",
+        "key_field": "",
+        "table": "( SELECT geometry FROM osm_transport_points  WHERE type = 'turning_circle' and geometry && !bbox!) AS data",
+        "type": "postgis",
+        "user": "user",
+        "password": "user",
+        "srid": "3857"
+      },
+      "class": "",
+      "geometry": "point",
+      "id": "osm_turning_circle_case",
+      "name": "turning_circle_case",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "srs-name": "3857"
+    },
+    {
+      "Datasource": {
+        "dbname": "osm",
+        "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34",
+        "geometry_field": "geometry",
+        "key_field": "",
+        "table": "( SELECT geometry FROM osm_landusages WHERE type = 'pedestrian' and geometry && !bbox!) AS data",
+        "type": "postgis",
+        "user": "user",
+        "password": "user",
+        "srid": "3857"
+      },
+      "class": "",
+      "geometry": "polygon",
+      "id": "osm_pedestrian_area_case",
+      "name": "pedestrian_area_case",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "srs-name": "3857"
+    },
+    {
+      "Datasource": {
+        "dbname": "osm",
+        "extent": "-20037508.34,-20037508.34,20037508.34,20037508.34",
+        "geometry_field": "",
+        "id": "roads_high",
+        "key_field": "",
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "table": "( SELECT geometry, type, tunnel, bridge, access,\nCASE\n    WHEN usage IN ('main') THEN 'main'\n    WHEN usage IN ('branch') THEN 'branch'\n    WHEN usage IN ('industrial') THEN 'industrial'\n    WHEN usage IN ('military') THEN 'military'\n    WHEN usage IN ('tourism') THEN 'tourism'\n    WHEN usage IS NULL THEN 'none'\n    ELSE 'other' END AS usage,\n CASE\n    WHEN service IN ('spur') THEN 'spur'\n    WHEN service IN ('yard') THEN 'yard'\n    WHEN service IN ('siding') THEN 'siding'\n    WHEN service IS NULL THEN 'none'\n    ELSE 'other' END AS service,\n  'fill' AS render,\n  CASE\n    WHEN type IN ('motorway', 'trunk') THEN 'motorway'\n    WHEN type IN ('primary', 'secondary') THEN 'mainroad'\n    WHEN type IN ('motorway_link', 'trunk_link', 'primary_link', 'secondary_link', 'tertiary', 'tertiary_link', 'residential', 'unclassified', 'road', 'living_street') THEN 'minorroad'\n    WHEN type IN ('service', 'pedestrian') THEN 'restricted'\n    WHEN type IN ('track') THEN 'track'\n    WHEN type IN ('cycleway') THEN 'cycleway'\n    WHEN type IN ('path', 'footway', 'steps', 'bridleway') THEN 'path'\n    WHEN class IN ('railways') OR type IN ('light_rail', 'subway', 'narrow_gauge', 'rail', 'tram') THEN 'railway'\n    ELSE 'other' END AS stylegroup\n  FROM osm_roads_n_railways\n  WHERE geometry && !bbox! and bridge = 0\n    AND tunnel = 0\n  ORDER BY z_order\n) AS data",
+        "type": "postgis",
+        "user": "user",
+        "password": "user",
+        "extent_cache": "auto",
+        "project": "geopicardie_topo",
+        "srid": "3857"
+      },
+      "class": "",
+      "geometry": "linestring",
+      "id": "osm_roads_high",
+      "name": "roads_high",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "srs-name": "3857",
+      "extent": [
+        -179.9999999749438,
+        -85.051,
+        179.9999999749438,
+        85.051
+      ],
+      "advanced": {}
+    },
+    {
+      "Datasource": {
+        "dbname": "osm",
+        "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34",
+        "geometry_field": "",
+        "key_field": "",
+        "table": "( SELECT geometry, type\n  FROM osm_roads_n_railways_gen1\n  WHERE type IN ('motorway', 'trunk', 'primary', 'secondary', 'motorway_link', 'trunk_link') and geometry && !bbox!) AS data",
+        "type": "postgis",
+        "user": "user",
+        "password": "user",
+        "id": "roads_med",
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "srid": "3857"
+      },
+      "class": "",
+      "geometry": "linestring",
+      "id": "osm_roads_med",
+      "name": "roads_med",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "srs-name": "3857"
+    },
+    {
+      "Datasource": {
+        "dbname": "osm",
+        "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34",
+        "geometry_field": "geometry",
+        "key_field": "",
+        "table": "( SELECT geometry, type FROM osm_roads_n_railways_gen0 WHERE geometry && !bbox!) AS data",
+        "type": "postgis",
+        "user": "user",
+        "password": "user",
+        "srid": "3857"
+      },
+      "class": "",
+      "geometry": "linestring",
+      "id": "osm_roads_low",
+      "name": "roads_low",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "srs-name": "3857"
+    },
+    {
+      "Datasource": {
+        "dbname": "osm",
+        "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34",
+        "geometry_field": "geometry",
+        "key_field": "",
+        "table": "( SELECT geometry FROM osm_landusages WHERE type = 'pedestrian' and geometry && !bbox!) AS data",
+        "type": "postgis",
+        "user": "user",
+        "password": "user",
+        "srid": "3857"
+      },
+      "class": "",
+      "geometry": "polygon",
+      "id": "osm_pedestrian_area_fill",
+      "name": "pedestrian_area_fill",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "srs-name": "3857"
+    },
+    {
+      "Datasource": {
+        "dbname": "osm",
+        "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34",
+        "geometry_field": "geometry",
+        "key_field": "",
+        "table": "( SELECT geometry FROM osm_transport_points WHERE type = 'turning_circle' and geometry && !bbox!) AS data",
+        "type": "postgis",
+        "user": "user",
+        "password": "user",
+        "srid": "3857"
+      },
+      "class": "",
+      "geometry": "point",
+      "id": "osm_turning_circle_fill",
+      "name": "turning_circle_fill",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "srs-name": "3857"
+    },
+    {
+      "Datasource": {
+        "dbname": "osm",
+        "extent": "-20037508.34,-20037508.34,20037508.34,20037508.34",
+        "geometry_field": "geometry",
+        "id": "bridge",
+        "key_field": "",
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "table": "( SELECT geometry, type, bridge, access,\nCASE\n    WHEN usage IN ('main') THEN 'main'\n    WHEN usage IN ('branch') THEN 'branch'\n    WHEN usage IN ('industrial') THEN 'industrial'\n    WHEN usage IN ('military') THEN 'military'\n    WHEN usage IN ('tourism') THEN 'tourism'\n    WHEN usage IS NULL THEN 'none'\n    ELSE 'other' END AS usage,\n CASE\n    WHEN service IN ('spur') THEN 'spur'\n    WHEN service IN ('yard') THEN 'yard'\n    WHEN service IN ('siding') THEN 'siding'\n    WHEN service IS NULL THEN 'none'\n    ELSE 'other' END AS service,\nrender, z_order, 0 as tunnel,\n  CASE\n    WHEN type IN ('motorway', 'trunk') THEN 'motorway'\n    WHEN type IN ('primary', 'secondary') THEN 'mainroad'\n    WHEN type IN ('motorway_link', 'trunk_link', 'primary_link', 'secondary_link', 'tertiary', 'tertiary_link', 'residential', 'unclassified', 'road', 'living_street') THEN 'minorroad'\n    WHEN type IN ('service', 'pedestrian') THEN 'restricted'\n    WHEN type IN ('track') THEN 'track'\n    WHEN type IN ('cycleway') THEN 'cycleway'\n    WHEN type IN ('path', 'footway', 'steps', 'bridleway') THEN 'path'\n    WHEN class IN ('railways') OR type IN ('light_rail', 'subway', 'narrow_gauge', 'rail', 'tram') THEN 'railway'\n    ELSE 'other' END AS stylegroup\n  FROM (\n    SELECT *, '1_outline' AS render FROM osm_roads_n_railways WHERE bridge = 1 and geometry && !bbox! \n    UNION ALL\n    SELECT *, '2_line' AS render FROM osm_roads_n_railways WHERE bridge = 1 and geometry && !bbox! \n    UNION ALL\n    SELECT *, '3_inline' AS render FROM osm_roads_n_railways WHERE bridge = 1 and geometry && !bbox! \n  ) as bridges\n  ORDER BY z_order ASC, render ASC\n) AS data",
+        "type": "postgis",
+        "user": "user",
+        "password": "user",
+        "extent_cache": "auto",
+        "srid": "3857"
+      },
+      "class": "",
+      "geometry": "linestring",
+      "id": "osm_bridge",
+      "name": "bridge",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "srs-name": "3857",
+      "advanced": {},
+      "extent": [
+        -179.9999999749438,
+        -85.051,
+        179.9999999749438,
+        85.051
+      ]
+    },
+    {
+      "Datasource": {
+        "dbname": "osm",
+        "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34",
+        "geometry_field": "geometry",
+        "key_field": "",
+        "table": "(select geometry, type,\n\tCASE\n\t\tWHEN type IN ('toll_booth', 'stile', 'gate', 'horse_stile','lift_gate', 'kissing_gate','cattle_grid','entrance') THEN 'gate'\n\t\tWHEN type IN ('block', 'bollard', 'chain', 'cycle_barrier', 'spikes', 'fence', 'wire_fence','yes') THEN 'divider'\n\tEND AS stylegroup\nFROM osm_barrierpoints where geometry && !bbox!) AS data",
+        "type": "postgis",
+        "user": "user",
+        "password": "user",
+        "srid": "3857"
+      },
+      "class": "",
+      "geometry": "point",
+      "id": "osm_barrier_points",
+      "name": "barrier_points",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "srs-name": "3857"
+    },
+    {
+      "Datasource": {
+        "dbname": "osm",
+        "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34",
+        "geometry_field": "geometry",
+        "id": "barrier_lines",
+        "key_field": "",
+        "srs": null,
+        "table": "(SELECT geometry, type,\n\tCASE \n\t\tWHEN type IN ('city_wall', 'fence', 'retaining_wall', 'wall', 'wire_fence', 'yes') THEN 'fence'\n\t\tWHEN type IN ('gate', 'spikes', 'bollard', 'lift_gate', 'kissing_gate') THEN 'gate'\n\t\tWHEN type IN ('hedge') THEN 'hedge'\n\tEND AS stylegroup\nFROM osm_barrierways where geometry && !bbox!) AS data",
+        "type": "postgis",
+        "user": "user",
+        "password": "user",
+        "srid": "3857"
+      },
+      "class": "",
+      "geometry": "linestring",
+      "id": "osm_barrier_lines",
+      "name": "barrier_lines",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "srs-name": "3857"
+    },
+    {
+      "Datasource": {
+        "dbname": "osm",
+        "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34",
+        "geometry_field": "geometry",
+        "key_field": "",
+        "table": "( SELECT geometry, type, name, area FROM osm_buildings WHERE type = 'roof' and geometry && !bbox! ORDER BY ST_YMin(ST_Envelope(geometry)) DESC\n) AS data",
+        "type": "postgis",
+        "user": "user",
+        "password": "user",
+        "srid": "3857"
+      },
+      "class": "",
+      "geometry": "polygon",
+      "id": "osm_roofs",
+      "name": "roofs",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "srs-name": "3857"
+    },
+    {
+      "Datasource": {
+        "dbname": "osm",
+        "geometry_field": "geometry",
+        "key_field": "",
+        "table": "(SELECT geometry, type, name,voltage FROM osm_powerlines WHERE geometry && !bbox!) AS data",
+        "type": "postgis",
+        "user": "user",
+        "password": "user",
+        "srid": "3857"
+      },
+      "class": "",
+      "geometry": "linestring",
+      "id": "osm_powerlines",
+      "name": "osm_powerlines",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "srs-name": "3857"
+    },
+    {
+      "Datasource": {
+        "dbname": "osm",
+        "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34",
+        "geometry_field": "geometry",
+        "id": "admin_line",
+        "key_field": "",
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "table": "(select name,admin_level,geometry from osm_admin_members where (role = 'outer' or role is null) and st_geometrytype(geometry)='ST_LineString' and geometry && !bbox!) AS data",
+        "type": "postgis",
+        "user": "user",
+        "password": "user",
+        "extent_cache": "auto",
+        "srid": "3857"
+      },
+      "class": "",
+      "geometry": "linestring",
+      "id": "osm_admin_line",
+      "name": "admin_line",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "srs-name": "3857"
+    },
+    {
+      "Datasource": {
+        "file": "osmregionsfr.shp",
+        "id": "osmregionsfr",
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over"
+      },
+      "class": "",
+      "geometry": "polygon",
+      "id": "osmregionsfr",
+      "name": "osmregionsfr",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over"
+    },
+    {
+      "Datasource": {
+        "file": "osmregionsfr_gen.shp",
+        "id": "osmregionsfr_gen",
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over"
+      },
+      "class": "",
+      "geometry": "polygon",
+      "id": "osmregionsfr_gen",
+      "name": "osmregionsfr_gen",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -179.58997888396897,
+        -85.051,
+        179.38330358817012,
+        82.48332318035942
+      ],
+      "id": "10m_populated_places",
+      "class": "",
+      "Datasource": {
+        "file": "./layers/10m-populated-places/10m-populated-places.shp",
+        "encoding": "LATIN1"
+      },
+      "srs-name": "3857",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {
+        "encoding": "LATIN1"
+      },
+      "name": "10m_populated_places"
+    },
+    {
+      "Datasource": {
+        "dbname": "osm",
+        "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34",
+        "geometry_field": "geometry",
+        "id": "place",
+        "key_field": "",
+        "srs": null,
+        "table": "( SELECT geometry, type, name, z_order, population\n  FROM osm_places\n  ORDER BY z_order, population DESC NULLS LAST\n) AS data",
+        "type": "postgis",
+        "user": "user",
+        "password": "user",
+        "srid": "3857"
+      },
+      "class": "",
+      "geometry": "point",
+      "id": "osm_place",
+      "name": "place",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "srs-name": "3857"
+    },
+    {
+      "Datasource": {
+        "dbname": "osm",
+        "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34",
+        "geometry_field": "geometry",
+        "id": "eoliennes",
+        "key_field": "",
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "table": "( SELECT geometry, type FROM osm_windturbines where geometry && !bbox!) AS data",
+        "type": "postgis",
+        "user": "user",
+        "password": "user",
+        "srid": "3857"
+      },
+      "class": "",
+      "geometry": "point",
+      "id": "eoliennes",
+      "name": "eoliennes",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "srs-name": "3857"
+    },
+
+    {
+      "Datasource": {
+        "dbname": "osm",
+        "extent": "-20037508.34,-20037508.34,20037508.34,20037508.34",
+        "geometry_field": "geometry",
+        "id": "area_label",
+        "key_field": "",
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "table": "(SELECT type, name, area, \nCASE \n        WHEN type IN ( \n            'cemetery', 'college', 'commercial', 'common','forest', 'garden', 'golf_course', \n            'hospital', 'industrial', 'library', 'park', 'pedestrian', 'place_of_worship', \n            'playground', 'school', 'sports_center', 'stadium', 'theatre', 'university' ) \n            THEN 'land' \n        WHEN type in ( 'water', 'basin' ) \n            THEN 'water' \n        WHEN type in ( 'building' ) \n            THEN 'building'\n    END AS stylegroup, \n    ST_PointOnSurface(geometry) AS geometry \nFROM osm_areas_for_labels  where geometry && !bbox! ORDER BY area DESC) AS data",
+        "type": "postgis",
+        "user": "user",
+        "password": "user",
+        "extent_cache": "auto",
+        "project": "geopicardie_topo_12",
+        "srid": "3857"
+      },
+      "class": "",
+      "geometry": "point",
+      "id": "osm_area_label",
+      "name": "area_label",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "srs-name": "3857",
+      "advanced": {}
+    },
+    {
+      "Datasource": {
+        "dbname": "osm",
+        "geometry_field": "geometry",
+        "id": "road_label_name",
+        "key_field": "",
+        "srs": null,
+        "table": "( SELECT name, type, class, geometry FROM osm_roads_for_labels_name where geometry && !bbox! ) AS data",
+        "type": "postgis",
+        "user": "user",
+        "password": "user",
+        "extent_cache": "auto",
+        "extent": "7349.59481127445,6027408.8355078,731182.322849574,6716105.79236794",
+        "srid": "3857"
+      },
+      "class": "",
+      "geometry": "linestring",
+      "id": "osm_road_label_name",
+      "name": "road_label_name",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "srs-name": "3857",
+      "extent": [
+        0.06602253351053368,
+        47.52024639170859,
+        6.568322560937867,
+        51.53290743807125
+      ],
+      "advanced": {}
+    },
+    {
+      "Datasource": {
+        "dbname": "osm",
+        "geometry_field": "geometry",
+        "id": "road_label_ref",
+        "key_field": "",
+        "srs": null,
+        "table": "( SELECT ref, type, class, geometry AS geometry FROM osm_roads_for_labels_ref where geometry && !bbox!) AS data",
+        "type": "postgis",
+        "user": "user",
+        "password": "user",
+        "extent_cache": "auto",
+        "extent": "7349.59481127445,6027408.8355078,731182.322849574,6716105.79236794",
+        "srid": "3857"
+      },
+      "class": "",
+      "geometry": "linestring",
+      "id": "osm_road_label_ref",
+      "name": "road_label_ref",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "srs-name": "3857",
+      "extent": [
+        0.06602253351053368,
+        47.52024639170859,
+        6.568322560937867,
+        51.53290743807125
+      ],
+      "advanced": {}
+    },
+    {
+      "Datasource": {
+        "dbname": "osm",
+        "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34",
+        "geometry_field": "geometry",
+        "id": "waterway_label",
+        "key_field": "",
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "table": "( SELECT geometry, type, name\n  FROM osm_waterways_for_labels\n  WHERE geometry && !bbox! and type IN ('canal', 'river', 'stream') \n    AND name IS NOT NULL\n) AS data",
+        "type": "postgis",
+        "user": "user",
+        "password": "user",
+        "srid": "3857"
+      },
+      "class": "",
+      "geometry": "linestring",
+      "id": "osm_waterway_label",
+      "name": "waterway_label",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "srs-name": "3857"
+    },
+    {
+      "Datasource": {
+        "dbname": "osm",
+        "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34",
+        "geometry_field": "geometry",
+        "id": "osm_oneway_roads",
+        "key_field": "",
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "table": "( SELECT geometry,type,oneway FROM osm_roads_n_railways  WHERE geometry && !bbox! and oneway!=0) AS data",
+        "type": "postgis",
+        "user": "user",
+        "password": "user",
+        "extent_cache": "auto",
+        "srid": "3857"
+      },
+      "class": "",
+      "geometry": "linestring",
+      "id": "osm_oneway_roads",
+      "name": "oneway_roads",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "srs-name": "3857",
+      "extent": [
+        1.494595721287779,
+        49.92586509154295,
+        4.275257481841043,
+        51.09244027032182
+      ],
+      "advanced": {
+        "srid": "3857"
+      }
+    }
+  ],
+  "scale": 1,
+  "metatile": 3,
+  "attribution": "Data © OpenStreetMap (and) contributors, styles CC-BY-SA",
+  "description": "OSM styles for GeoPicardie - OSM Bright, Flickr and Exo font based",
+  "name": "GeoPicardie Topo Pure"
+}
