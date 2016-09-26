@@ -1,3 +1,5 @@
+set search_path to import,public;
+
 \i roads_n_railways/add_indices.sql
 \i roads_n_railways/clean_tiny_geometries.sql
 \i roads_n_railways/clean_road_refs.sql
