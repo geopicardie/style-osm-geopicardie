@@ -3,7 +3,7 @@
 /* ================================================================== */
 @road_opacity: 0.6;
 
-#roads_low [zoom<10] {
+#roads_low[zoom>5][zoom<10] {
   [type='motorway'],
   [type='motorway_link'],
   [type='trunk'],
